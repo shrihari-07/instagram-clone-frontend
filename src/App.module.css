@@ -1,0 +1,30 @@
+.root {
+  height: 100%;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.root > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate-h1 5s ease-in-out infinite;
+}
+
+@keyframes animate-h1 {
+  0% {
+    left: 25%;
+    opacity: 0;
+  }
+  50% {
+    left: 50%;
+    opacity: 1;
+  }
+  100% {
+    left: 75%;
+    opacity: 0;
+  }
+}
